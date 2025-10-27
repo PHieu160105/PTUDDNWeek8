@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: phhieu16/coursecru_test-app:latest
+          image: phhieu16/springboot-hello:80283e58d01abadfde4564d3c8e886de0bad0f92
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 
