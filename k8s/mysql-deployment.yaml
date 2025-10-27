@@ -2,6 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mysql-pvc
+  namespace: springboot-app
   labels:
     app: mysql
 spec:
@@ -15,6 +16,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: mysql-secret
+  namespace: springboot-app
 type: Opaque
 stringData:
   mysql-root-password: "Hieu@123456"
@@ -23,6 +25,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mysql
+  namespace: springboot-app
   labels:
     app: mysql
 spec:
@@ -63,6 +66,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mysql
+  namespace: springboot-app
   labels:
     app: mysql
 spec:
