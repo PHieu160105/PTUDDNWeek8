@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: springboot
-          image: phhieu16/springboot-hello:1d1647d9f759e40c9f35b4cc26f22d3cf0428e42
+          image: phhieu16/springboot-hello:f2c9206539020c18c104ee7aa604006eb9b8dd4a
           imagePullPolicy: Always
           ports:
             - containerPort: 8080 
